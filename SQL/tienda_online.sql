@@ -106,3 +106,7 @@ INSERT INTO productos (categoria_id, nombre, descripcion, precio, stock, oferta,
 (4, 'Ratón Razer DeathAdder V2', 'Ratón Razer DeathAdder V2, óptimo para gaming', 50.00, 60, '15%', CURDATE(), 'razer_deathadderv2.jpg'),
 (4, 'Ratón Corsair Harpoon', 'Ratón gaming Corsair Harpoon RGB Wireless', 60.00, 30, NULL, CURDATE(), 'corsair_harpoon.jpg'),
 (4, 'Apple Magic Mouse 2', 'Apple Magic Mouse 2 con superficie táctil', 80.00, 40, NULL, CURDATE(), 'apple_magicmouse2.jpg');
+
+-- Usuarios
+INSERT INTO usuarios (nombre, apellidos, email, password, rol) 
+VALUES ('admin', 'admin', 'admin@gmail.com', '$2y$04$XZoQNRD0kF1kJ1Re1W2NRODn6.I5.2Z0Wp/j94vimGJ/Klubz18de', 'admin');
