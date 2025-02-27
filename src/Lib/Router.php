@@ -30,7 +30,7 @@ class Router {
      */
     public static function dispatch(): void {
         $method = $_SERVER['REQUEST_METHOD'];
-        $action = preg_replace('/tienda_online/', '', $_SERVER['REQUEST_URI']);
+        $action = preg_replace('/tienda_online_php/', '', $_SERVER['REQUEST_URI']);
         $action = trim($action, '/');
 
         // Extrae el parámetro ID si existe en la URI.
@@ -48,7 +48,7 @@ class Router {
             echo call_user_func($callback, $param);
         } else {
             // Redirecciona a una página de error si la ruta no existe.
-            header('Location: ./tienda_online/error/');
+            header('Location: ./tienda_online_php/error/');
         }
     }
 }

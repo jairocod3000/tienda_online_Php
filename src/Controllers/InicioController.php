@@ -7,14 +7,17 @@ use Controllers\ProductoController;
 class InicioController{
     
     private Pages $pages;
+    private ProductoController $productoController;
     
     function __construct(){
 
         $this->pages = new Pages();
+        $this->productoController = new ProductoController();
     }
 
     public function index(): void{
-        $this->pages->render('inicio/index');
+        $productos = $this->productoController->getRandom();
+        $this->pages->render('inicio/index', ['productos' => $productos]);
 
     }
 }
