@@ -1,0 +1,96 @@
+/* -- Estilos para el contenedor principal para la gestión de categorías -- */
+
+.category-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.category-management {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px; 
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos para encabezados dentro del contenedor */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de acciones, como agregar una nueva categoría */
+.category-actions {
+    margin-bottom: 20px;
+}
+
+.action-button a {
+    padding: 10px 15px;
+    background-color: #5cb85c; /* Verde claro para acciones positivas */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.action-button a:hover {
+    background-color: #4cae4c; /* Un verde más oscuro para el hover */
+}
+
+/* Estilos para la tabla */
+.category-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.category-table th, .category-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Estilos para enlaces de acción dentro de la tabla */
+.edit-link, .delete-link {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.edit-link {
+    background-color: #f0ad4e; /* Amarillo para editar */
+}
+
+.delete-link {
+    background-color: #d9534f; /* Rojo para eliminar */
+}
+
+.edit-link:hover {
+    background-color: #ec971f;
+}
+
+.delete-link:hover {
+    background-color: #c9302c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-management {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .category-table th, .category-table td {
+        padding: 8px; /* Menor padding para más espacio en dispositivos móviles */
+    }
+}
