@@ -1,0 +1,115 @@
+/* -- Estilos para la sección de la gestión de Usuarios -- */
+
+.users-section{
+    background-image: url("../img/fondo_detalles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 260px;
+    padding-bottom: 420px;
+}
+
+.users-main {
+    width: 100%;
+    max-width: 960px; 
+    margin: 0 auto; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px 15px rgba(32, 29, 29, 0.1); 
+    background-color: white;
+}
+
+
+h1 {
+    text-align: center;
+    color: goldenrod;
+    font-family: fantasy;
+    font-size: 2em;
+}
+
+
+.user-actions {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.new-user-btn {
+    background-color: #3498DB; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new-user-btn:hover {
+    background-color: #2980B9; 
+}
+
+.new-user-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Tabla de usuarios */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-family: monospace;
+}
+
+.users-table th, .users-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.users-table th {
+    background-color: #ECF0F1; 
+    color: brown;
+}
+
+
+.edit-link, .delete-link {
+    padding: 5px 8px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.edit-link {
+    background-color: #F1C40F; 
+}
+
+.delete-link {
+    background-color: #E74C3C; 
+}
+
+.edit-link:hover {
+    background-color: #D4AC0D; 
+}
+
+.delete-link:hover {
+    background-color: #C0392B; 
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .user-actions {
+        text-align: center;
+    }
+
+    .users-table {
+        font-size: 14px; 
+    }
+
+    .users-table th, .users-table td {
+        padding: 5px;
+    }
+}
