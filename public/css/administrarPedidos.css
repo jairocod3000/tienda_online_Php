@@ -1,0 +1,111 @@
+/* -- Estilos para la sección de gestionar pedidos -- */
+
+.orders-section {
+    background-image: url(../img/fondo_detalles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 260px;
+    padding-bottom: 400px;
+}
+
+.orders-div{
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.orders-div h1 {
+    color: goldenrod;
+    font-size: 2em;
+    font-family: fantasy;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.error-messages, .no-orders, .access-denied {
+    color: #c0392b;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fce4e4;
+    border-left: 5px solid #e74c3c;
+    text-align: center;
+}
+
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
+.orders-table th, .orders-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.orders-table th {
+    background-color: #ecf0f1;
+    color: brown;
+}
+
+
+.update-btn, .confirm-link, .edit-link, .delete-link {
+    display: inline-block;
+    padding: 8px 12px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update-btn:hover {
+    background-color: #2980b9;
+}
+
+.confirm-link {
+    background-color: #2ecc71;
+}
+
+.confirm-link:hover {
+    background-color: #27ae60;
+}
+
+.edit-link {
+    background-color: #f39c12;
+}
+
+.edit-link:hover {
+    background-color: #d68910;
+}
+
+.delete-link {
+    background-color: #e74c3c;
+}
+
+.delete-link:hover {
+    background-color: #c0392b;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .orders-section {
+        padding: 10px;
+    }
+
+    .orders-table th, .orders-table td {
+        padding: 10px;
+    }
+}

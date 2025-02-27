@@ -1,0 +1,90 @@
+/* -- Estilos para la sección de realizar el pedido -- */
+
+.order-main {
+    background-image: url("../img/fondo_detalles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 225px;
+    padding-bottom: 300px;
+}
+
+.order-details {
+    background-color: #ffffff; 
+    width: 90%;
+    max-width: 500px; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px 10px #666;
+    margin: auto; 
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
+.order-details h1{
+    color: goldenrod;
+    font-size: 2em;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+    color: #333; 
+}
+
+.form-errors p {
+    color: #cc0000; 
+    text-align: center; 
+    margin: 10px 0; 
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.form-field {
+    margin-bottom: 15px; 
+}
+
+.form-field label {
+    display: block; 
+    margin-bottom: 5px; 
+    color: #666; 
+}
+
+.form-field input {
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.confirm-button {
+    background-color: darkslategrey; 
+    color: white; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.25s; 
+}
+
+.confirm-button:hover {
+    background-color: #45a049; 
+}
+
+
+@media (max-width: 600px) {
+    .order-details {
+        width: 100%; 
+        margin: 10px;
+        padding: 15px; 
+    }
+
+    .form-field input, .confirm-button {
+        padding: 12px; 
+    }
+}

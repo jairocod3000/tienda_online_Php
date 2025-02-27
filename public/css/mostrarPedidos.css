@@ -1,0 +1,80 @@
+/* -- Estilos para la sección de los pedidos de un usuario -- */
+
+.order-section {
+    background-image: url("../img/fondo_detalles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    padding-top: 200px;
+    padding-bottom: 550px;
+}
+
+.order-section h1 {
+    color: goldenrod;
+    text-align: left;
+    font-size: 2em;
+    font-family: fantasy;
+}
+
+
+.order-table-container {
+    width: 100%;
+    max-width: 960px; 
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    overflow-x: auto; 
+}
+
+
+.orders {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.orders th, .orders td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd; 
+}
+
+.orders th {
+    background-color: #f8f8f8; 
+    color: #333;
+}
+
+
+.confirm-link i, .confirm-link {
+    display: inline-block;
+    padding: 8px;
+    color: #4CAF50; 
+    text-decoration: none;
+}
+
+.confirm-link:hover, .confirm-link i:hover {
+    color: #388E3C; 
+}
+
+.no-orders {
+    color: #D32F2F; 
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .order-table-container {
+        padding: 10px;
+    }
+
+    .orders th, .orders td {
+        padding: 10px; 
+    }
+
+    .orders {
+        font-size: 14px; 
+    }
+}
