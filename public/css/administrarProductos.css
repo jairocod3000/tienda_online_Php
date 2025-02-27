@@ -1,0 +1,96 @@
+/* -- Estilos para la sección de la gestión de Productos -- */
+
+.product-section {
+    background-image: url("../img/fondo_detalles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 225px;
+}
+
+.product-management {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 15px rgba(32, 29, 29, 0.1); 
+}
+
+.product-management h1 {
+    text-align: center;
+    color: goldenrod;
+    font-size: 2em;
+    font-family: fantasy;
+}
+
+.product-actions {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.add-product-btn a {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.add-product-btn a:hover {
+    background-color: #449d44;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: #e9e9e9;
+    color: brown;
+}
+
+.delete-product-link, .edit-product-link {
+    padding: 5px 8px;
+    margin-right: 5px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.delete-product-link {
+    background-color: #d9534f;
+}
+
+.edit-product-link {
+    background-color: #f0ad4e;
+}
+
+.delete-product-link:hover {
+    background-color: #c9302c;
+}
+
+.edit-product-link:hover {
+    background-color: #ec971f;
+}
+
+@media (max-width: 768px) {
+    .product-actions {
+        text-align: center;
+    }
+
+    .product-table th, .product-table td {
+        padding: 6px;
+    }
+}
