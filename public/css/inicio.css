@@ -1,0 +1,108 @@
+/* -- Estilos para la sección de Inicio -- */
+
+section {
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-image: url("../img/fondo_inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+section h1 {
+    text-align: center;
+    color: goldenrod;
+    font-size: 2.5em;
+    font-family: fantasy;
+}
+
+/* Estilos para el carrusel */
+.product-carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.carousel-tracks {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-image {
+    width: 600px;  
+    height: 350px; 
+    border-radius: 18px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    object-fit: cover;  /* Para asegurarse de que la imagen cubra el espacio asignado */
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    transition: all ease-in 0.6s;
+}
+
+.product-image:hover {
+    box-shadow: 5px 8px 5px 10px tan;
+}
+
+.product-name {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Botones de navegación */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: #555;
+    opacity: 1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .carousel-item {
+        flex-direction: column;
+    }
+    .product-image {
+        width: 90%;
+    }
+}
