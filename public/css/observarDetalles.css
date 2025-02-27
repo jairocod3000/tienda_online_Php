@@ -1,0 +1,103 @@
+/* -- Estilos para la sección de detalles del producto -- */
+
+.product-details {
+    background-image: url("../img/fondo_detalles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 225px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 20px;
+    overflow: hidden;
+    
+}
+
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.product-info h2 {
+    margin: 0.5em 0;
+    color: goldenrod;
+    font-size: 2em;
+    font-family: fantasy;
+}
+
+
+.product-info p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+
+.product-pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+
+.price-tag {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Botón de añadir al carrito */
+.cart-add-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all ease-in 0.6s;
+}
+
+.cart-add-btn:hover, .cart-add-btn:focus {
+    background-color: #0056b3;
+    box-shadow: 2px 4px 2px 5px #666;
+}
+
+
+.cart-add-btn i {
+    margin-left: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .product-details {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .product-pricing {
+        flex-direction: column;
+    }
+
+    .cart-add-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
