@@ -38,6 +38,11 @@
                     <input type="password" name="data[password]" id="user-password" required>
                 </div>
 
+                <label>
+                    <input type="checkbox" name="recordar" value="1">
+                    Recordar usuario
+                </label>
+
                 <div class="account-options">
                     <p>¿Nuevo usuario? <a href="<?= BASE_URL ?>usuario/registro">Crea una cuenta</a></p>
                 </div>

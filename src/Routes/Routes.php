@@ -168,6 +168,14 @@ class Routes {
             return (new UsuarioController())->editar($id);
         });
 
+        Router::añadirRuta('GET', '/usuario/editarMiPerfil', function() {
+            return (new UsuarioController())->editarMiPerfil();
+        });
+
+        Router::añadirRuta('POST', '/usuario/actualizarMiPerfil', function() {
+            return (new UsuarioController())->actualizarMiPerfil();
+        });
+
         Router::añadirRuta('POST', '/usuario/actualizar', function() {
             return (new UsuarioController())->actualizar();
         });

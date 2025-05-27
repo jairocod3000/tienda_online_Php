@@ -1,0 +1,87 @@
+.edit-profile-section {
+    background-image: url("../img/fondo_detalles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+.edit-profile-main {
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px 15px rgba(32, 29, 29, 0.1); 
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: goldenrod;
+    font-family: fantasy;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #3498DB; 
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980B9; 
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.success-message {
+    color: #27ae60;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .edit-profile-main {
+        padding: 20px;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}

@@ -105,9 +105,7 @@ class PedidoController {
     }
 
     /**
-     * Obtiene todos los pedidos de un usuario.
-     *
-     * @return array Los pedidos obtenidos.
+     * Valida un pedido
      */
     public function validarPedido($provincia, $localidad, $direccion) {
         $errores = [];
@@ -124,9 +122,7 @@ class PedidoController {
     }
 
     /**
-     * Obtiene todos los pedidos de un usuario.
-     *
-     * @return array Los pedidos obtenidos.
+     * Crea un pedido
      */
     public function crear () {
 
@@ -161,9 +157,7 @@ class PedidoController {
     }
 
     /**
-     * Obtiene todos los pedidos de un usuario.
-     *
-     * @return array Los pedidos obtenidos.
+     * Elimina un pedido
      */
     public function eliminar($id){
         $usuario = $_SESSION['login'];
@@ -175,9 +169,7 @@ class PedidoController {
     }
 
     /**
-     * Obtiene todos los pedidos de un usuario.
-     *
-     * @return array Los pedidos obtenidos.
+     * Edita un pedido
      */
     public function editar($id){
         $pedidos = $this->pedidoService->recuperarTodosPedidos();
@@ -185,9 +177,7 @@ class PedidoController {
     }
 
     /**
-     * Obtiene todos los pedidos de un usuario.
-     *
-     * @return array Los pedidos obtenidos.
+     * Valida un pedido al actualizarlo
      */
     public function validarPedidoActualizado($data) {
         $errores = [];

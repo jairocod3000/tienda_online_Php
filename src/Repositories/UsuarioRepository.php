@@ -56,30 +56,28 @@ class UsuarioRepository {
         return $this->db->todosRegistrosUltimaConsulta();
     }
 
-    public function login($usuario){
-        $email = $usuario->getEmail();
-        $password = $usuario->getPassword();
+public function login($usuario) {
+    $email = $usuario->getEmail();
+    $password = $usuario->getPassword();
 
-        try {
-            $datosUsuario = $this->buscaMail($email);
+    try {
+        $datosUsuario = $this->buscaMail($email);
 
-            if ($datosUsuario !== false && $datosUsuario !== null){
-                $verify = password_verify($password, $datosUsuario->password);
+        if ($datosUsuario !== false && $datosUsuario !== null) {
+            $verify = password_verify($password, $datosUsuario->password);
 
-                if ($verify){
-                    $result = $datosUsuario;
-                } else {
-                    $result = false;
-                }
+            if ($verify) {
+                return $datosUsuario;
             } else {
-                $result = false;
+                return false;
             }
-        } catch (PDOException $error){
-            $result = false;
+        } else {
+            return false;
         }
-
-        return $result;
+    } catch (PDOException $error) {
+        return false;
     }
+}
 
     public function buscaMail($email){
         $select = $this->db->ejecucionDeclaracionSQL("SELECT * FROM usuarios WHERE email=:email");
@@ -153,6 +151,26 @@ class UsuarioRepository {
         $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
         $this->db->cerrarConexion();
         return $usuario;
+    }
+
+    public function actualizarNombreApellidos($id, $nombre, $apellidos) {
+        $ins = $this->db->ejecucionDeclaracionSQL("UPDATE usuarios SET nombre = :nombre, apellidos = :apellidos WHERE id = :id");
+
+        $ins->bindValue(':nombre', $nombre);
+        $ins->bindValue(':apellidos', $apellidos);
+        $ins->bindValue(':id', $id);
+
+        try {
+            $ins->execute();
+            $result = true;
+        } catch (PDOException $error) {
+            $result = false;
+        }
+
+        $ins->closeCursor();
+        $ins = null;
+
+        return $result;
     }
 
 }

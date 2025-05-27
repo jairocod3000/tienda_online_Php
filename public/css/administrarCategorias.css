@@ -2,6 +2,7 @@
 
 .category-section {
     display: flex;
+    background-image: url(../img/fondo_detalles.jpg);
     justify-content: center;
     align-items: center;
     padding-top: 100px;

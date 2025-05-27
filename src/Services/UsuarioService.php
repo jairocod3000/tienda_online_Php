@@ -89,5 +89,17 @@ class UsuarioService {
         return $this->usuarioRepository->borrarUsuario($id);
     }
 
+    /**
+     * Actualiza solo el nombre y apellidos de un usuario.
+     *
+     * @param int $id El identificador del usuario.
+     * @param string $nombre El nuevo nombre.
+     * @param string $apellidos Los nuevos apellidos.
+     * @return bool Verdadero si la actualización es exitosa, falso de lo contrario.
+     */
+    public function actualizarNombreApellidos($id, $nombre, $apellidos) {
+        return $this->usuarioRepository->actualizarNombreApellidos($id, $nombre, $apellidos);
+    }
+
 }
 

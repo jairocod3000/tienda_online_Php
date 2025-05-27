@@ -38,6 +38,7 @@ $categorias = $categoriaObj->obtenerCategorias();
                     <?php else: ?>
                         <p><?= $_SESSION['login']->nombre ?> <?= $_SESSION['login']->apellidos ?></p>
                         <a href="<?= BASE_URL ?>usuario/logout/">Cerrar Sesión</a>
+                        <a href="<?= BASE_URL ?>usuario/editarMiPerfil/">Editar Mi Perfil</a>
                         <a href="<?= BASE_URL ?>pedido/misPedidos/">Mis Pedidos</a>
                     <?php endif; ?>
                     <a href="<?= BASE_URL ?>carrito/obtenerCarrito/">
